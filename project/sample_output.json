@@ -1,22 +1,34 @@
 {
-    "total_valid_records": 1,
-    "total_rejected_records": 2,
+    "total_valid_records": 5,
+    "total_rejected_records": 5,
     "errors": [
         {
-            "row": 1,
+            "row": 2,
+            "errors": "Missing required fields (name, email, or age)."
+        },
+        {
+            "row": 4,
+            "errors": "Missing required fields (name, email, or age)."
+        },
+        {
+            "row": 6,
             "errors": {
-                "email": [
-                    "user with this email already exists."
+                "age": [
+                    "Age must be in between 0 and 120"
                 ]
             }
         },
         {
-            "row": 3,
+            "row": 7,
             "errors": {
-                "email": [
-                    "Enter a valid email address."
+                "age": [
+                    "Age must be in between 0 and 120"
                 ]
             }
+        },
+        {
+            "row": 10,
+            "errors": "Duplicate email entry: michael.scott@dundermifflin.com"
         }
     ]
 }
