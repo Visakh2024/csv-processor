@@ -24,6 +24,10 @@ class UploadCSVAPIView(APIView):
         if not file.name.endswith('.csv'):
             return Response({"error": "Only .csv files are allowed."}, status=status.HTTP_400_BAD_REQUEST)
 
+        # Check if the file is empty
+        if file.size == 0:
+            return Response({"error": "The CSV file is empty."}, status=status.HTTP_400_BAD_REQUEST)
+
         # Variables for tracking records
         valid_records = 0
         rejected_records = 0
