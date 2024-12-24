@@ -23,7 +23,6 @@ This is a Django REST Framework (DRF) API endpoint that processes user data from
 - Git
 
 ### Step 1: Clone the repository
-```bash
 git clone https://github.com/Visakh2024/csv-processor.git
 cd csv-processor
 
