@@ -23,25 +23,37 @@ This is a Django REST Framework (DRF) API endpoint that processes user data from
 - Git
 
 ### Step 1: Clone the repository
+```bash
 git clone https://github.com/Visakh2024/csv-processor.git
 cd csv-processor
+```
 
 ### Step 2: Set up a virtual environment
+```bash
 python3 -m venv venv
 source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
+```
 
 ### Step 3: Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### Step 4: Apply migrations
+```bash
 python manage.py migrate
+```
 
 ### Step 5: Start the development server
+```bash
 python manage.py runserver
+```
 
 ### Running Tests
+```bash
 python manage.py test
+```
 
 
 
