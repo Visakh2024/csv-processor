@@ -1,0 +1,22 @@
+{
+    "total_valid_records": 1,
+    "total_rejected_records": 2,
+    "errors": [
+        {
+            "row": 1,
+            "errors": {
+                "email": [
+                    "user with this email already exists."
+                ]
+            }
+        },
+        {
+            "row": 3,
+            "errors": {
+                "email": [
+                    "Enter a valid email address."
+                ]
+            }
+        }
+    ]
+}
